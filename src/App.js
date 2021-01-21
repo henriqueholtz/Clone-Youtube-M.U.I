@@ -1,6 +1,5 @@
 import Home from './Home'
 import {
-  Button,
   ThemeProvider,
   createMuiTheme,
 } from "@material-ui/core";

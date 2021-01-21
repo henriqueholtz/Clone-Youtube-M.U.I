@@ -1,14 +1,11 @@
 
 import React from 'react';
+import TopBar from './Components/TopBar'
 
 import {makeStyles, AppBar, Toolbar, IconButton, Button, List, Drawer, Divider, ListItem, ListItemIcon, ListItemText, Box, Typography, ListSubheader } from "@material-ui/core";
 
 import { useTheme } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
-import VideoCall from '@material-ui/icons/VideoCall';
-import AppsIcon from '@material-ui/icons/Apps';
-import MoreVert from '@material-ui/icons/MoreVert';
 
 import HomeIcon from '@material-ui/icons/Home';
 import Subscriptions from '@material-ui/icons/Subscriptions';
@@ -22,10 +19,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     height: "100vh",
   },
-  appBar: {
-    boxShadow: 'none',
-    zIndex: theme.zIndex.drawer +1,
-  },
   drawer: {
     width: 240,
     flexShrink: 0
@@ -34,18 +27,12 @@ const useStyles = makeStyles((theme) => ({
     width: 240,
     borderRight: 'none'
   },
-  logo: {
-    height: 25
-  },
   icons: {
     paddingRight: theme.spacing(2)
   },
   menuIcon: {
     paddingRight: theme.spacing(2),
     paddingLeft: theme.spacing(3)
-  },
-  grow: {
-    flexGrow: 1
   },
   listItemText: {
     fontSize: 14
@@ -67,44 +54,7 @@ function Home() {
   const theme = useTheme();
 
   return <div className={classes.root}>
-    <AppBar color="inherit" className={classes.appBar}>
-      <Toolbar>
-        <IconButton
-          edge="start"
-          className={classes.menuButton}
-          color="inherit"
-          aria-label="menu"
-        >
-          <MenuIcon />
-        </IconButton>
-
-        <img src="/images/black.png" alt="logo" className={classes.logo} />
-
-        <div className={classes.grow}/>
-        
-        <IconButton
-          className={classes.icons}
-          color="inherit"
-        >
-          <VideoCall />
-        </IconButton>
-
-        <IconButton
-          className={classes.icons}
-          color="inherit"
-        >
-          <AppsIcon />
-        </IconButton>
-
-        <IconButton
-          className={classes.icons}
-          color="inherit"
-        >
-          <MoreVert />
-        </IconButton>
-        <Button variant="outlined" color="secondary" startIcon={<AccountCircle />}>Sign In</Button>
-      </Toolbar>
-    </AppBar>
+    <TopBar />
 
     <Box display="flex">
       <Drawer
