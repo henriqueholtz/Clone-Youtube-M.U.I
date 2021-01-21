@@ -1,0 +1,9 @@
+https://www.youtube.com/watch?v=u9FnmBdBl5k
+
+npx create-react-app clone-youtube-mat-ui
+
+Removendo arquivos: [ App.css, App.test.js, logo.svg, reportWeb..., setuoTests.js  ]
+
+Instalando Material-UI: npm install @material-ui/core, depois npm start
+
+Instalando Icons do Material-UI: npm install @material-ui/icons
