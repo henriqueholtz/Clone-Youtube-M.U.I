@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
-import {makeStyles, AppBar, Toolbar, IconButton, Button, List, Drawer, Divider, ListItem, ListItemIcon, ListItemText, Box, Typography, ListSubheader } from "@material-ui/core";
+import {makeStyles, AppBar, Toolbar, IconButton, Button, List, Drawer, Divider, ListItem, ListItemIcon, ListItemText, Box, Typography, ListSubheader, Switch } from "@material-ui/core";
 
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -24,8 +24,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-export default function TopBar() {
+export default function TopBar({darkMode, setDarkMode}) {
     const classes = useStyles();
+    const theme = useTheme();
+    console.log(darkMode)
 
     return (
         <AppBar color="inherit" className={classes.appBar}>
@@ -33,34 +35,26 @@ export default function TopBar() {
         <IconButton
           edge="start"
           className={classes.menuButton}
-          color="inherit"
           aria-label="menu"
         >
           <MenuIcon />
         </IconButton>
 
-        <img src="/images/black.png" alt="logo" className={classes.logo} />
+        <img src={theme.palette.type === 'dark' ? "/images/white.png" : "/images/black.png"} alt="logo" className={classes.logo} />
 
         <div className={classes.grow}/>
         
-        <IconButton
-          className={classes.icons}
-          color="inherit"
-        >
+        <Switch value={darkMode} onChange={() => setDarkMode(!darkMode)} />
+
+        <IconButton className={classes.icons} >
           <VideoCall />
         </IconButton>
 
-        <IconButton
-          className={classes.icons}
-          color="inherit"
-        >
+        <IconButton className={classes.icons} >
           <AppsIcon />
         </IconButton>
 
-        <IconButton
-          className={classes.icons}
-          color="inherit"
-        >
+        <IconButton className={classes.icons}>
           <MoreVert />
         </IconButton>
         <Button variant="outlined" color="secondary" startIcon={<AccountCircle />}>Sign In</Button>

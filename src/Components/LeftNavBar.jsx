@@ -27,9 +27,6 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 4,
     paddingBottom: 4
   },
-  list: {
-    marginTop: 52
-  },
   subheader: {
     textTransform: 'uppercase'
   }
@@ -47,8 +44,9 @@ export default function LeftNavBar() {
         paper: classes.drawerPaper,
         }}
       >
+          <Toolbar />
         <div className={classes.toolbar} />
-        <List className={classes.list}>
+        <List>
           <ListItem button key={'home'} classes={{root: classes.listItem }}>
             <ListItemIcon>{<HomeIcon />}</ListItemIcon>
             <ListItemText classes={{
