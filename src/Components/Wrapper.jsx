@@ -2,7 +2,7 @@ import React from 'react';
 import data from '../Data/videos.js'
 import VideoItem from './VideoItem'
 
-import {makeStyles, AppBar, Toolbar, IconButton, Button, List, Drawer, Divider, ListItem, ListItemIcon, ListItemText, Box, Typography, ListSubheader, Grid } from "@material-ui/core";
+import {Toolbar, Box, Typography, Grid } from "@material-ui/core";
 
 export default function Wrapper() {
     return (

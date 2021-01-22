@@ -1,5 +1,5 @@
 import React from 'react';
-import {makeStyles, AppBar, Toolbar, IconButton, Button, List, Drawer, Divider, ListItem, ListItemIcon, ListItemText, Box, Typography, ListSubheader } from "@material-ui/core";
+import {makeStyles, Toolbar, Button, List, Drawer, Divider, ListItem, ListItemIcon, ListItemText, Box, Typography, ListSubheader } from "@material-ui/core";
 
 import AccountCircle from '@material-ui/icons/AccountCircle';
 
