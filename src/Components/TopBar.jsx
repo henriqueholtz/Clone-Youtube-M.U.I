@@ -40,7 +40,7 @@ export default function TopBar({darkMode, setDarkMode}) {
           <MenuIcon />
         </IconButton>
 
-        <img src={theme.palette.type === 'dark' ? "/images/white.png" : "/images/black.png"} alt="logo" className={classes.logo} />
+        <img src={theme.palette.type === 'dark' ? "/Images/white.png" : "/Images/black.png"} alt="logo" className={classes.logo} />
 
         <div className={classes.grow}/>
         
