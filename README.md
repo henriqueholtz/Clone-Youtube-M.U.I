@@ -1,6 +1,6 @@
 # Welcome to my homepage clone from YouTube :sunglasses:
 
-You can **acess** this application in **[holtz.youtube.surge.sh](https://holtz.youtube.surge.shh/)** (by [surge.sh](https://surge.sh))
+You can **acess** this application in **[holtzyoutube.surge.sh](https://holtzyoutube.surge.sh/)** (by [surge.sh](https://surge.sh))
 
 This is a simple project made with ReactJs.
 
@@ -16,6 +16,8 @@ This is a simple project made with ReactJs.
 
 #### You also can clone this repository, install it (with `yarn install`), and run it (with `yarn run`) only;
 ##### After, you can access from `http://localhost:3000` in your prefer browser.
+
+*Inspiration from [Youtube channel LucasNhimi](https://github.com/florinpop17/app-ideas)*
 
 #### **A short preview:**
 
