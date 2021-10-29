@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
 import {makeStyles, AppBar, Toolbar, IconButton, Button, Switch } from "@material-ui/core";
+import { AppSettings } from '../AppSettings'
 
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -40,7 +41,7 @@ export default function TopBar({darkMode, setDarkMode}) {
           <MenuIcon />
         </IconButton>
 
-        <img src={theme.palette.type === 'dark' ? "/Images/white.png" : "/Images/black.png"} alt="logo" className={classes.logo} />
+        <img src={theme.palette.type === 'dark' ? `${AppSettings.basePathImageFolder}white.png` : `${AppSettings.basePathImageFolder}black.png`} alt="logo" className={classes.logo} />
 
         <div className={classes.grow}/>
         

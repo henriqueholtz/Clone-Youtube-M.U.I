@@ -20,7 +20,7 @@ jobs:
         env:
           REACT_APP_ENV_GITHUB: ${{ secrets.REACT_APP_ENV_GITHUB }}
 
-      - name: Deploy to Holtz_Bin2Dec
+      - name: Deploy to Clone-Youtube
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
