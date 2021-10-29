@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
 import {makeStyles, AppBar, Toolbar, IconButton, Button, Switch } from "@material-ui/core";
-import { AppSettings } from '../AppSettings'
+import { AppSettings } from '../Config/AppSettings'
 
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircle from '@material-ui/icons/AccountCircle';
