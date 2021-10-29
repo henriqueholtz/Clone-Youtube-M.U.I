@@ -1,3 +1,5 @@
+const basePathImageFolder = process.env.REACT_APP_ENV_GITHUB === 'true' ? '/Clone-Youtube-M.U.I/Images/' : '/Images/'
+
 const videos = [
     {
       id: 1,
@@ -6,8 +8,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '11 mi de visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb1.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb1.png`,
     },
     {
       id: 2,
@@ -16,8 +18,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '957 mil visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb2.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb2.png`,
     },
     {
       id: 3,
@@ -26,8 +28,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '106 mil visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb3.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb3.png`,
     },
     {
       id: 4,
@@ -36,8 +38,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '5,6 mi de visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb4.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb4.png`,
     },
     {
       id: 5,
@@ -46,8 +48,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '2,2 mi de visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb5.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb5.png`,
     },
     {
       id: 6,
@@ -55,8 +57,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '233 mil visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb6.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb6.png`,
     },
     {
       id: 7,
@@ -65,8 +67,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '118 mil visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb7.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb7.png`,
     },
     {
       id: 8,
@@ -75,8 +77,8 @@ const videos = [
       channel: 'Lucas Nhimi',
       views: '1,9 mi de visualizações',
       date: 'há 1 semana',
-      avatar: '/Images/avatar.jpeg',
-      thumb: '/Images/thumb8.png',
+      avatar: `${basePathImageFolder}avatar.jpeg`,
+      thumb: `${basePathImageFolder}thumb8.png`,
     },
   ];
 
