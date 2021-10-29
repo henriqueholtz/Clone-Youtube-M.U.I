@@ -15,10 +15,11 @@ jobs:
           node-version: '14.x'
       - name: Build web-app
         run: |
-          npm ci ci-github
-          npm run build-github
-      env:
-        REACT_APP_ENV_GITHUB: ${{ secrets.REACT_APP_ENV_GITHUB }}
+          npm ci ci
+          npm run build
+        env:
+          REACT_APP_ENV_GITHUB: ${{ secrets.REACT_APP_ENV_GITHUB }}
+
       - name: Deploy to Holtz_Bin2Dec
         uses: peaceiris/actions-gh-pages@v3
         with:
