@@ -1,6 +1,9 @@
 # Welcome to my homepage clone from YouTube :sunglasses:
 
-You can **acess** this application in **[holtzyoutube.surge.sh](https://holtzyoutube.surge.sh/)** (by [surge.sh](https://surge.sh))
+## You can **acess** this application in:
+
+- **[holtzyoutube.surge.sh](https://holtzyoutube.surge.sh/)** (by [surge.sh](https://surge.sh))
+-  **[henrique.holtz.github.io/Clone-Youtube-M.U.I](https://henriqueholtz.github.io/Clone-Youtube-M.U.I/)** (by [github-pages](https://pages.github.com/))
 
 This is a simple project made with ReactJs.
 
