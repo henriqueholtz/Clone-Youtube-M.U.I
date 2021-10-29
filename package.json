@@ -16,6 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "start-github": "set REACT_APP_ENV_GITHUB=true&&react-scripts start",
+    "ci-github": "set REACT_APP_ENV_GITHUB=true&&react-scripts ci",
     "build": "react-scripts build",
     "build-github": "set REACT_APP_ENV_GITHUB=true&&react-scripts build",
     "test": "react-scripts test",

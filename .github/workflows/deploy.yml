@@ -15,7 +15,7 @@ jobs:
           node-version: '14.x'
       - name: Build web-app
         run: |
-          npm ci
+          npm ci ci-github
           npm run build-github
       - name: Deploy to Holtz_Bin2Dec
         uses: peaceiris/actions-gh-pages@v3
